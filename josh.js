@@ -26,10 +26,10 @@ function round(playerSelection, computerSelection){
       return `You lose! ${computerSelection} beats ${playerSelection}`;
    }
 }
-function game(){
+function game() {
     let scorePlayer = 0;
     let scoreComputer = 0;
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i < 5; i++) {
         console.log(`Player ${scorePlayer} VS Computer ${scoreComputer}`);
         const playerSelection = playerChoice();
         const computerSelection = computerPlay();
@@ -41,14 +41,14 @@ function game(){
     if((round(playerSelection,computerSelection) === ("You lose! scissors beats paper")) || (round(playerSelection,computerSelection) === ("You lose! paper beats rock")) || (round(playerSelection,computerSelection) === ("You lose! rock beats scissors" )))
         { scoreComputer++;
     }
-    console.log("Game Over") 
-if(scorePlayer > scoreComputer){
+    console.log("Game Over")
+    if (scorePlayer > scoreComputer) {
     console.log("You win! Dont't be too happy though, its just a computer you beat.");
 } 
 else if (scorePlayer < scoreComputer) {
     console.log("lol imagine losing to a computer that you made");
 } else if(scoreComputer === scoreComputer) {
     console.log("Tie. Boring.");
-}
+    }
 }
 }
