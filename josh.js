@@ -42,7 +42,7 @@ function game() {
         { scoreComputer++;
     }
 }
-    console.log("Game Over")
+    console.log(`Game Over. Score: Computer:${scoreComputer}, Player:${scorePlayer}.`)
     if (scorePlayer > scoreComputer) {
     console.log("You win! Dont't be too happy though, its just a computer you beat.");
 } 
