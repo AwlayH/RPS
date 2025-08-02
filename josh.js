@@ -52,4 +52,3 @@ else if (scorePlayer < scoreComputer) {
     console.log("Tie. Boring.");
     }
 }
-
