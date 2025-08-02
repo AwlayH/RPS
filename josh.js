@@ -41,6 +41,7 @@ function game() {
     if((round(playerSelection,computerSelection) === ("You lose! scissors beats paper")) || (round(playerSelection,computerSelection) === ("You lose! paper beats rock")) || (round(playerSelection,computerSelection) === ("You lose! rock beats scissors" )))
         { scoreComputer++;
     }
+}
     console.log("Game Over")
     if (scorePlayer > scoreComputer) {
     console.log("You win! Dont't be too happy though, its just a computer you beat.");
@@ -51,4 +52,4 @@ else if (scorePlayer < scoreComputer) {
     console.log("Tie. Boring.");
     }
 }
-}
+
